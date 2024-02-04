@@ -1,38 +1,123 @@
-.App {
+/* src/App.css */
+
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #1b1b1b;
+  color: #fff;
+  margin: 0;
+}
+
+.app {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.navbar {
+  background-color: #333;
+  padding: 10px;
+  ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    padding: 0;
+    margin: 0;
+  }
+  li {
+    margin: 0;
+  }
+  a {
+    text-decoration: none;
+    color: #fff;
+    transition: color 0.3s ease-in-out;
+  }
+  a:hover {
+    color: #ffd700;
+  }
+}
+
+.brand{
+  font-weight: bolder;
+}
+
+.home {
+  text-align: center;
+  padding: 20px;
+}
+
+.product-list {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  padding: 0;
+  margin: 0;
+}
+
+.product-item {
+  margin: 10px;
+  transition: transform 0.3s ease-in-out;
+}
+
+.product-item:hover {
+  transform: scale(1.05);
+}
+
+.product-box {
+  background-color: #262626;
+  padding: 15px;
+  text-align: center;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.product-box:hover {
+  background-color: #444;
+}
+
+.product-box img {
+  max-width: 100%;
+  max-height: 150px;
+  object-fit: cover; 
+  border-radius: 8px;
+}
+
+.description {
+  color: #aaa;
+}
+
+.category-button {
+  background-color: #333;
+  color: #fff;
+  padding: 8px 12px;
+  margin: 5px;
+  text-decoration: none;
+  border-radius: 5px;
+  display: inline-block;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.category-button:hover {
+  background-color: #555;
+}
+
+.cart-container {
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.cart-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.cart-item {
+  background-color: #262626;
+  margin: 5px;
+  padding: 10px;
+  border-radius: 5px;
+  transition: background-color 0.3s ease-in-out;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.cart-item:hover {
+  background-color: #444;
 }
